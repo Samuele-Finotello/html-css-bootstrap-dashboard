@@ -17,22 +17,33 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
-        <img class="logo" src="./assets/img/duck.png" alt="Duck">
-        <div class="d-none d-lg-inline-block me-auto ms-4">
-          <a class="navbar-brand text-white" href="#">Catalogo Libri</a>
-          <a class="navbar-brand text-white-50" href="#">Anagrafica Utenti</a>
-          <a class="navbar-brand text-white-50" href="#">Storico Prestiti</a>
-          <a class="navbar-brand text-white-50" href="#">Help</a>
-        </div>
-
-        <div class="d-inline-block d-lg-none">
-          <a class="btn btn-outline-secondary fs-3 px-3" href="#"><i class="fa-solid fa-bars"></i></a>
-        </div>
-        <div class="d-none d-lg-inline-block ms-auto">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./assets/img/duck.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anagrafica Utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storico Prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+            <input class="form-control me-2 bg-light text-dark" type="search" placeholder="Cerca..."
+              aria-label="Search" />
             <button class="btn btn-outline-light" type="submit">Cerca</button>
           </form>
         </div>
@@ -44,9 +55,9 @@
     <div class="container-md">
       <div class="row">
         <div class="col-12 col-lg-8">
-          <div class="d-flex my-4">
+          <div class="d-flex justify-content-between my-4">
             <h2 class="d-inline">Catalogo Libri</h2>
-            <button class="btn btn-primary ms-auto" href="#">Aggiungi libro</button>
+            <a class="btn btn-primary" href="./newbook.html">Aggiungi libro</a>
           </div>
 
           <table class="table table-striped">
@@ -64,7 +75,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-success">Disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -73,7 +84,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-success">Disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -82,7 +93,7 @@
                 <td class="d-none d-md-table-cell">18/10/2023</td>
                 <td><span class="badge bg-warning">In prestito</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -91,7 +102,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-success">Disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -100,7 +111,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-danger">Non disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -109,7 +120,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-success">Disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -118,7 +129,7 @@
                 <td class="d-none d-md-table-cell">21/09/2023</td>
                 <td><span class="badge bg-warning">In prestito</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -127,7 +138,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-success">Disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -136,7 +147,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-danger">Non disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -145,7 +156,7 @@
                 <td class="d-none d-md-table-cell">25/07/2023</td>
                 <td><span class="badge bg-warning">In prestito</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -154,7 +165,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-success">Disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>
@@ -163,7 +174,7 @@
                 <td class="d-none d-md-table-cell">-</td>
                 <td><span class="badge bg-success">Disponibile</span></td>
                 <td class="text-center">
-                  <button class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                  <a class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></a>
                   <button class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                 </td>
               </tr>

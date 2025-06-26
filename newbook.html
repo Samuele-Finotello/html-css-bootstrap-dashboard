@@ -82,8 +82,8 @@
         </div>
         <div class="col-12">
           <label for="yearBook" class="form-label fw-semibold mt-3">Anno di pubblicazione</label>
-          <input type="text" class="form-control" placeholder="Inserisci l'anno" aria-label="Year book" id="yearBook"
-            maxlength="4">
+          <input type="number" class="form-control" placeholder="Inserisci l'anno" aria-label="Year book" id="yearBook"
+            max="2025">
         </div>
         <div class="col-12">
           <label for="isbn" class="form-label fw-semibold mt-3">ISBN#</label>
@@ -91,6 +91,11 @@
             maxlength="13">
         </div>
         <hr class="mt-5 mb-4">
+        <div class="col-12">
+          <label for="notes" class="form-label fw-semibold">Note</label>
+          <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="notes"
+            rows="3"></textarea>
+        </div>
       </div>
     </div>
 
